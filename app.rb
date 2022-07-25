@@ -11,3 +11,12 @@ end
 get "/" do
   erb :index
 end
+
+get "/about" do
+  erb :about
+end
+
+get "/team/:username" do
+  puts params[:username]
+  "The username is #{params[:username]}"
+end
