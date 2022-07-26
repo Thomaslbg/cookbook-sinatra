@@ -1,0 +1,12 @@
+<h1>This is a Cookbook ! 👨‍🍳👨‍🍳👨‍🍳</h1>
+
+
+<div>
+  <ul>
+    <% @recipes.each_with_index do |recipe, index| %>
+    <li><%= "#{index + 1}. #{recipe.name} | #{recipe.rating} | #{recipe.description}" %></li>
+    <% end %>
+  </ul>
+<div>
+
+<a href="new">Add a recipe</a>
